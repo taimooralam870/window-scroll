@@ -1,0 +1,9 @@
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+    $(document).scroll(function() {
+        var scrollPercentage = ($(document).scrollTop() + $(window).height()) / $(document).height();
+        var rotateAngle = scrollPercentage * 360;
+        $('.rotate-image').css('transform', 'translate(-50%, -50%) rotate(' + rotateAngle + 'deg)');
+    });
+</script>
